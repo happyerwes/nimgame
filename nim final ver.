@@ -14,11 +14,10 @@ def move_check(pile, pile_count, piles):
     return True
 
 def game_over(piles):
-    def game_over(piles):
-        if sum(piles) == 0:
-            return True
-        else:
-            return False
+    if sum(piles) == 0:
+        return True
+    else:
+        return False
 
 def player_move(player_name, piles):
     print(f"{player_name} turns ")
